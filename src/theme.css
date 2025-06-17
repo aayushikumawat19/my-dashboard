@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'DM Sans';
+  src: url('./fonts/DM-Sans-Regular.ttf') format('truetype'),
+       url('./fonts/DM-Sans-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  line-height: 1.5; 
+  color: rgba(255, 255, 255, 0.87); 
+  background-color: #242424; 
+}
