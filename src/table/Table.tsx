@@ -14,6 +14,9 @@ import facebook from '../assets/images/logos_facebook.png'
 import skype from '../assets/images/Group 30.png'
 import Icon from '../assets/login/Group 7.svg'
 
+
+
+
 const Table: React.FC = () => {
   const contacts = [
     {
