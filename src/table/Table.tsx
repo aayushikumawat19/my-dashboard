@@ -1,21 +1,18 @@
 import React, { useState } from 'react';
 import ContactItem from './ContactItem';
 import Input from '../comman/Input';
-import rectangleImage from '../assets/images/Rectangle22.png';
-import Rectangle from '../assets/images/Rectangle 22 (1).png'
-import Rectanglee from '../assets/images/Rectangle 22 (3).png'
-import Image from '../assets/images/Rectangle 22 (4).png'
-import Images from '../assets/images/Rectangle 11.png'
-import Photo from '../assets/images/Rectangle 22 (2).png'
-import google from '../assets/images/devicon_google.png';
-import youtube from '../assets/images/logos_youtube-icon.png'
-import twitter from '../assets/images/logos_twitter.png'
-import facebook from '../assets/images/logos_facebook.png'
-import skype from '../assets/images/Group 30.png'
-import Icon from '../assets/login/Group 7.svg'
-
-
-
+import rectangleImage from '../assets/images/Rectangle 22.svg';
+import Rectangle from '../assets/images/Rectangle 22 (1).svg'
+import Rectanglee from '../assets/images/Rectangle 22 (2).svg'
+import Image from '../assets/images/Rectangle 22 (3).svg'
+import Images from '../assets/images/Rectangle 23.svg'
+import Photo from '../assets/images/Rectangle 23 (1).svg'
+import google from '../assets/images/devicon_google.svg';
+import youtube from '../assets/images/logos_youtube-icon.svg'
+import twitter from '../assets/images/logos_twitter.svg'
+import facebook from '../assets/images/logos_facebook.svg'
+import skype from '../assets/images/logos_skype.svg'
+import Icon from '../assets/images/Group 7.svg'
 
 const Table: React.FC = () => {
   const contacts = [
@@ -126,31 +123,31 @@ const Table: React.FC = () => {
             <th className="py-3 px-4"> 
               <div className="flex items-center whitespace-nowrap">
                 <span>CONTACT NAME</span>
-                <img src={Icon} alt="Sort Icon" className="ml-2 h-4" /> 
+                <img src={Icon} alt="Sort Icon" className="ml-2" /> 
               </div>
             </th>
             <th className="py-3 px-4"> 
               <div className="flex items-center whitespace-nowrap">
                 <span>CONTACT</span>
-                <img src={Icon} alt="Sort Icon" className="ml-2 h-4" /> 
+                <img src={Icon} alt="Sort Icon" className="ml-2" /> 
               </div>
             </th>
             <th className="py-3 px-4"> 
               <div className="flex items-center whitespace-nowrap">
                 <span>LEAD SCORE</span>
-                <img src={Icon} alt="Sort Icon" className="ml-2 h-4" /> 
+                <img src={Icon} alt="Sort Icon" className="ml-2" /> 
               </div>
             </th>
             <th className="py-3 px-4"> 
               <div className="flex items-center whitespace-nowrap">
                 <span>COMPANY</span>
-                <img src={Icon} alt="Sort Icon" className="ml-2 h-4" /> 
+                <img src={Icon} alt="Sort Icon" className="ml-2" /> 
               </div>
             </th>
             <th className="py-3 px-4"> 
               <div className="flex items-center whitespace-nowrap">
                 <span>CONTACT OWNER</span>
-                <img src={Icon} alt="Sort Icon" className="ml-2 h-4" /> 
+                <img src={Icon} alt="Sort Icon" className="ml-2" /> 
               </div>
             </th>
           </tr>
