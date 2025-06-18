@@ -22,32 +22,31 @@ const LoginForm: React.FC = () => {
     setShowPassword(!showPassword);
   };
 
-const handleLogin = () => {
-  const newErrors: { email?: string; password?: string } = {};
-  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  const handleLogin = () => {
+    const newErrors: { email?: string; password?: string } = {};
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-  if (!email.trim()) {
-    newErrors.email = 'Email is required';
-  } else if (!emailRegex.test(email)) {
-    newErrors.email = 'Enter a valid email address';
-  }
+    if (!email.trim()) {
+      newErrors.email = 'Email is required';
+    } else if (!emailRegex.test(email)) {
+      newErrors.email = 'Enter a valid email address';
+    }
 
-  if (!password.trim()) {
-    newErrors.password = 'Password is required';
-  }
+    if (!password.trim()) {
+      newErrors.password = 'Password is required';
+    }
 
-  setErrors(newErrors);
+    setErrors(newErrors);
 
-  if (Object.keys(newErrors).length === 0) {
-    localStorage.setItem('email', email);
-    localStorage.setItem('password', password);
+    if (Object.keys(newErrors).length === 0) {
+      localStorage.setItem('email', email);
+      localStorage.setItem('password', password);
 
-    alert('Login successful!');
-    setEmail('');
-    setPassword('');
-  }
-};
-
+      alert('Login successful!');
+      setEmail('');
+      setPassword('');
+    }
+  };
 
   return (
     <div className="flex items-center justify-center min-h-screen bg-gray-100">
@@ -78,12 +77,12 @@ const handleLogin = () => {
             />
             {showPassword ? (
               <FaEye
-                className="absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-400 cursor-pointer text-xl"
+                className={`absolute right-4 ${errors.password ? 'top-3' : 'top-1/2'} ${errors.password ? '' : '-translate-y-1/2'} text-gray-400 cursor-pointer text-xl`}
                 onClick={togglePasswordVisibility}
               />
             ) : (
               <FaEyeSlash
-                className="absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-400 cursor-pointer text-xl"
+                className={`absolute right-4 ${errors.password ? 'top-3' : 'top-1/2'} ${errors.password ? '' : '-translate-y-1/2'} text-gray-400 cursor-pointer text-xl`}
                 onClick={togglePasswordVisibility}
               />
             )}

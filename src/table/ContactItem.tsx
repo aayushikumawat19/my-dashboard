@@ -28,7 +28,7 @@ const ContactItem: React.FC<{ contact: ContactProps['contact'] }> = ({ contact }
         return 'bg-gray-100 text-gray-600';
     }
   };
-
+   
   return (
     <tr className="text-sm">
       <td className="py-4 px-4 flex items-center">

@@ -4,7 +4,7 @@ import LoginForm from '../login/LoginForm';
 
 const LoginPage: React.FC = () => {
   return (
-    <div className="min-h-screen flex bg-white">
+    <div className="min-h-screen flex bg-white max-w-[1514px] m-auto">
       <div className="w-[746px] bg-black items-center ">
         <AuthImage />
       </div>

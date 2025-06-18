@@ -7,7 +7,6 @@ import { FaAngleDown } from 'react-icons/fa';
 
 const Filters: React.FC = () => {
     const [activeTab, setActiveTab] = useState('Contact'); 
-
     const handleAddClick = () => {
         console.log('Add clicked');
     };
