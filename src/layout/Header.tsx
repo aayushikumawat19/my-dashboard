@@ -2,11 +2,11 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import Button from '../comman/Button'
 import Input from '../comman/Input';
-import Component from '../assets/images/Component 3.png';
-import Rectangle from '../assets/images/Rectangle 11.png';
-import fileIcon from '../assets/sidebar/mi_message.png';
-import buildingIcon from '../assets/sidebar/mingcute_notification-line.png';
-import clipboardIcon from '../assets/sidebar/circum_calendar.png';
+import Component from '../assets/header/Component 3.svg';
+import Rectangle from '../assets/header/Rectangle 23.svg';
+import fileIcon from '../assets/header/mi_message.svg';
+import buildingIcon from '../assets/header/mingcute_notification-line.svg';
+import clipboardIcon from '../assets/header/circum_calendar.svg';
 import { FaPlus } from 'react-icons/fa';
 
 const Header: React.FC = () => {

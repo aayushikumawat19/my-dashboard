@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import userIcon from '../assets/sidebar/Component 2.png';
-import fileIcon from '../assets/sidebar/ic_baseline-perm-contact-calendar.png';
-import buildingIcon from '../assets/sidebar/Frame.png';
-import clipboardIcon from '../assets/sidebar/Capa_1.png';
-import bellIcon from '../assets/sidebar/Layer_1.png';
-import helpIcon from '../assets/sidebar/lets-icons_file-dock-duotone.png';
-import settingsIcon from '../assets/sidebar/Group 36.png';
-import graphIcon from '../assets/sidebar/lsicon_setting-filled.png';
+import userIcon from '../assets/sidebar/Component 2.svg';
+import fileIcon from '../assets/sidebar/ic_baseline-perm-contact-calendar.svg';
+import buildingIcon from '../assets/sidebar/Frame.svg';
+import clipboardIcon from '../assets/sidebar/Capa_1.svg';
+import bellIcon from '../assets/sidebar/Group 35.svg';
+import helpIcon from '../assets/sidebar/lets-icons_file-dock-duotone.svg';
+import settingsIcon from '../assets/sidebar/Group 36.svg';
+import graphIcon from '../assets/sidebar/lsicon_setting-filled.svg';
 const Sidebar: React.FC = () => {
   const [active, setActive] = useState('file');
 
