@@ -6,7 +6,8 @@ import buildingIcon from '../assets/images/Frame (3).png';
 import { FaAngleDown } from 'react-icons/fa';
 
 const Filters: React.FC = () => {
-    const [activeTab, setActiveTab] = useState('Contact'); 
+    const [activeTab, setActiveTab] = useState('Contact');
+    const [viewMode, setViewMode] = useState<'list' | 'grid'>('list');
 
     const handleAddClick = () => {
         console.log('Add clicked');
@@ -55,26 +56,32 @@ const Filters: React.FC = () => {
                         <img src={columnIcon} alt="Column" className="w-4 h-4" />
                         <span>Manage Column</span>
                     </button>
+                                
+                <div className="flex items-center bg-[#F5F5F5] rounded-lg overflow-hidden shadow-inner">
+                    <button
+                        className={`p-2 ${viewMode === 'list' ? 'bg-white shadow-md rounded-l-lg' : ''}`}
+                        onClick={() => setViewMode('list')}
+                    >
+                        <img src={fileIcon} alt="List View" className="w-5 h-5" />
+                    </button>
+                    <button
+                        className={`p-2 ${viewMode === 'grid' ? 'bg-white shadow-md rounded-r-lg' : ''}`}
+                        onClick={() => setViewMode('grid')}
+                    >
+                        <img src={buildingIcon} alt="Grid View" className="w-5 h-5" />
+                    </button>
+                </div>
 
-                    <div className="flex items-center space-x-4">
-                        <a href="#" className="hover:bg-gray-700 p-2 rounded">
-                            <img src={fileIcon} alt="File" className="w-5 h-5" />
-                        </a>
-                        <a href="#" className="hover:bg-gray-700 p-2 rounded">
-                            <img src={buildingIcon} alt="Building" className="w-5 h-5" />
-                        </a>
-                    </div>
-
-                    <div className="flex items-center space-x-2">
-                        <button className="px-4 py-2 rounded">Export</button>
-                        <button
-                            className="bg-orange-500 text-white px-4 py-2 rounded flex items-center space-x-2"
-                            onClick={handleAddClick}
-                        >
-                            <span>Create Contact</span>
-                            <FaAngleDown className="text-sm" />
-                        </button>
-                    </div>
+                <div className="flex items-center space-x-2">
+                    <button className="px-4 py-2 rounded">Export</button>
+                    <button
+                        className="bg-orange-500 text-white px-4 py-2 rounded flex items-center space-x-2"
+                        onClick={handleAddClick}
+                    >
+                        <span>Create Contact</span>
+                        <FaAngleDown className="text-sm" />
+                    </button>
+                </div>
                 </div>
             </div>
         </div>
