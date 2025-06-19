@@ -33,6 +33,8 @@ const Header: React.FC = () => {
           onClick={handleAddClick}
           className="w-[28px] h-[28px]"
         />
+        <div className="w-px h-6 bg-[#5C5C5C]" />
+
         <a href="#" className="flex flex-col items-center hover:bg-gray-700 p-2 rounded">
           <img src={fileIcon} alt="File" className="w-5 h-5" />
         </a>
@@ -44,6 +46,8 @@ const Header: React.FC = () => {
         </a>
       </div>
 
+      <div className="w-px h-6 bg-[#5C5C5C]" />
+      
       <div className="flex items-center space-x-2 ml-4">
         <img src={Rectangle} alt="User" className="w-[38px] h-[38px] rounded-full" />
         <div className="flex flex-col">

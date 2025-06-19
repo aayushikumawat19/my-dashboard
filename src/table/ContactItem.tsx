@@ -38,7 +38,7 @@ const ContactItem: React.FC<{ contact: ContactProps['contact'] }> = ({ contact }
           <div className="text-xs text-gray-400">Today at 4:30 PM</div>
         </div>
       </td>
-       <td className="py-4 px-4 space-y-1">
+       <td className="py-4 px-4">
         <div className="flex items-center text-gray-800">
           <img src={EmailIcon} alt="email" className="w-4 h-4 mr-2" />
          

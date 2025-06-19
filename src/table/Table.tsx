@@ -13,7 +13,7 @@ import youtube from '../assets/images/logos_youtube-icon.svg'
 import twitter from '../assets/images/logos_twitter.svg'
 import facebook from '../assets/images/logos_facebook.svg'
 import skype from '../assets/images/logos_skype.svg'
-import Icon from '../assets/images/Group 7.svg'
+import Icon from '../assets/images/Group 7 (1).svg'
 
 const Table: React.FC = () => {
   const contacts = [
